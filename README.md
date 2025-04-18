@@ -1,4 +1,4 @@
-# 📡 Morse Code Translator (ESP8266 + SPIFFS)
+# Morse Code Translator (ESP8266 + SPIFFS)
 
 A lightweight and interactive Morse code translator that runs entirely from a NodeMCU (ESP8266) using SPIFFS. Type a message into the web interface, and the microcontroller will play it in real-time using a buzzer.
 
