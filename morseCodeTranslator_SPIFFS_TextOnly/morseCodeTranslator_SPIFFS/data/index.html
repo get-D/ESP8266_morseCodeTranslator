@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Morse Code Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📡 Morse Code Translator</h1>
+    <p>Type your message and send it to the buzzer!</p>
+    <form id="morseForm" onsubmit="handleSubmit(event)">
+      <input type="text" id="textInput" name="text" placeholder="Enter your message..." required>
+      <div>
+        <button type="submit">🚀 Send</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="confirmationModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">✖</button>
+      <div id="modalMessage">✅ Sent to buzzer!</div>
+      <div class="spinner" id="spinner" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
